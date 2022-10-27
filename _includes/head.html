@@ -34,7 +34,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/gitbook/images/apple-touch-icon-precomposed-152.png">
-<link rel="shortcut icon" href="{{site.baseurl}}/{{site.favicon_path}}" type="image/x-icon">
+<link rel="shortcut icon" href="{{site.favicon_path}}" type="image/x-icon">
 
 {% if site.extra_css %}
     {%- for extra_css in site.extra_css -%}
@@ -42,7 +42,7 @@
         {% if starts_with == "http" %}
 <link rel="stylesheet" href="{{ extra_css }}">
         {%- else -%}
-<link rel="stylesheet" href="{{site.baseurl}}/{{ extra_css }}">
+<link rel="stylesheet" href="{{ extra_css }}">
         {%- endif -%}
     {%- endfor -%}
 {% endif %}
@@ -53,7 +53,7 @@
         {% if starts_with == "http" %}
 <script src="{{ extra_js }}"></script>
         {%- else -%}
-<script src="{{site.baseurl}}/{{ extra_js }}"></script>
+<script src="{{ extra_js }}"></script>
         {%- endif -%}
     {%- endfor -%}
 {% endif %}
