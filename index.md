@@ -11,5 +11,3 @@ Make It Fast. <br/>
 <br/>
 <figcaption>Kent Beck <cite>UnixWay</cite></figcaption>
 </blockquote>
-
-<span style="display:none">I am the span</span>
