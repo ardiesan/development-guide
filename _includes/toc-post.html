@@ -1,0 +1,58 @@
+{% if site.toc.in_post %}
+<style>
+{% if site.toc.in_post %}
+.page-inner { max-width: 900px; }
+{% endif %}
+div.inpost-toc {
+    padding-top: 60px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 100;
+    z-index: 1000;
+    width: 325px;
+    float: right;
+}
+div.inpost-toc > ul,
+div.inpost-toc > ul li {
+    list-style: none;
+    border: 0px;
+}
+div.inpost-toc a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+div.inpost-toc a:link {
+    color: #000;
+}
+div.inpost-toc a:visited {
+    color: #C0C0C0;
+}
+div.inpost-toc a:hover {
+    color: #222;
+}
+div.inpost-toc > ul > li > a {
+    border-left: 1px solid #c0c0c0;
+    display: inline-block;
+    padding: 5px 10px 5px 20px;
+    font-style: sans-serif;
+}
+@media only screen and (min-width: 0px) and (max-width: 650px) {
+    div.inpost-toc {
+        display: none;
+    }
+}
+@media only screen and (min-width: 650px) and (max-width: 911px) {
+    div.inpost-toc {
+        width: 250px; padding-top: 100px; overflow: hidden;
+    }
+}
+
+</style>
+
+<div class="inpost-toc">
+    <ul>
+        <li><a href="#test"><i class="fa fa-list"></i> Table of Contents</a></li>
+    </ul>
+    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+</div>
+{% endif %}
