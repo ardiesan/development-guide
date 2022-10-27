@@ -32,9 +32,9 @@
                         {% if page.url == post.url %}
                         <li class="chapter active" data-level="1.2" data-path="{{post.url}}">
                         {% else %}
-                        <li class="chapter" data-level="1.1" data-path="{{post.url}}">
+                        <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                         {% endif %}
-                            <a href="{{post.url}}">
+                        <a href="{{site.baseurl}}{{post.url}}">
                                 {{ post.title | escape }}
                             </a>
                             {% if site.toc.in_menu %}
