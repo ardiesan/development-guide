@@ -7,7 +7,7 @@
         {% if page.previous %}
             <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
         {% else %}
-            <link rel="prev" href="{{site.baseurl}}/" />
+            <link rel="prev" href="" />
         {% endif %}
 
         {% if page.next %}
@@ -44,7 +44,7 @@
                             <i class="fa fa-angle-left"></i>
                         </a>
                     {% else %}
-                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
+                        <a href="" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     {% endif %}
