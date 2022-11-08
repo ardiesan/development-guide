@@ -1590,7 +1590,7 @@ font-size:16px}
     overflow:visible;
     height:50px;
     padding:0 8px;
-    z-index:2;
+    z-index:3000;
     font-size:.85em;
     color:#7e888b;
 background:0 0}
